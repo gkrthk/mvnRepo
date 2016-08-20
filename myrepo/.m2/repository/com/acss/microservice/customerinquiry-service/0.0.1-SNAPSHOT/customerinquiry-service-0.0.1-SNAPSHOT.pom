@@ -1,0 +1,64 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <parent>
+    <groupId>com.acss.microservice</groupId>
+    <artifactId>master</artifactId>
+    <version>0.0.1-SNAPSHOT</version>
+  </parent>
+  <artifactId>customerinquiry-service</artifactId>
+  <name>customerinquiry-service</name>
+  <description>customer inquiry service</description> 
+  <packaging>war</packaging> 
+  
+  <dependencies>
+  	<dependency>  		
+    	<groupId>org.springframework.cloud</groupId>
+    	<artifactId>spring-cloud-starter-hystrix</artifactId>
+    </dependency>    
+    <dependency>  		
+    	<groupId>org.springframework.cloud</groupId>
+    	<artifactId>spring-cloud-netflix-hystrix-stream</artifactId>
+    </dependency>
+    <dependency>  		
+    	<groupId>org.springframework.cloud</groupId>
+    	<artifactId>spring-cloud-starter-stream-rabbit</artifactId>
+    </dependency>
+    <dependency>
+    	<groupId>org.springframework.cloud</groupId>
+    	<artifactId>spring-cloud-starter-feign</artifactId>
+    </dependency>        
+    <dependency>
+			<groupId>org.springframework.cloud</groupId>
+			<artifactId>spring-cloud-starter-zuul</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>org.springframework.cloud</groupId>
+			<artifactId>spring-cloud-starter-config</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>org.springframework.cloud</groupId>
+			<artifactId>spring-cloud-config-server</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>org.springframework.cloud</groupId>
+			<artifactId>spring-cloud-starter-bus-amqp</artifactId>
+		</dependency>       
+		<!-- https://mvnrepository.com/artifact/redis.clients/jedis -->
+<dependency>
+    <groupId>redis.clients</groupId>
+    <artifactId>jedis</artifactId>
+    </dependency>
+		<!-- https://mvnrepository.com/artifact/log4j/log4j -->
+<dependency>
+    <groupId>log4j</groupId>
+    <artifactId>log4j</artifactId>
+    </dependency>
+		<!-- https://mvnrepository.com/artifact/org.springframework.data/spring-data-redis -->
+<dependency>
+    <groupId>org.springframework.data</groupId>
+    <artifactId>spring-data-redis</artifactId>
+    </dependency>
+		
+  </dependencies> 
+  
+</project>
